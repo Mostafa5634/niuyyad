@@ -31,43 +31,7 @@ Features are researched and developed in parallel, and then consolidated into se
 | Data Availability Sampling (outdated) | <ul><li>Core</li><ul><li>[Core types and functions](specs/_features/das/das-core.md)</li><li>[Fork choice changes](specs/_features/das/fork-choice.md)</li></ul><li>Additions</li><ul><li>[P2P Networking](specs/_features/das/p2p-interface.md)</li><li>[Sampling process](specs/_features/das/sampling.md)</li></ul></ul> | <ul><li> Dependent on sharding</li><li>[Technical explainer](https://hackmd.io/@HWeNw8hNRimMm2m2GH56Cw/B1YJPGkpD)</li></ul> |
 | EIP-6110 | <ul><li>Core</li><ul><li>[Beacon Chain changes](specs/_features/eip6110//beacon-chain.md)</li><li>[EIP-6110 fork](specs/_features/eip6110/fork.md)</li></ul><li>Additions</li><ul><li>[Honest validator guide changes](specs/_features/eip6110/validator.md)</li></ul></ul> |
 
-### Accompanying documents can be found in [specs](specs) and include:
-
-* [SimpleSerialize (SSZ) spec](ssz/simple-serialize.md)
-* [Merkle proof formats](ssz/merkle-proofs.md)
-* [General test format](tests/formats/README.md)
-
-## Additional specifications for client implementers
-
-Additional specifications and standards outside of requisite client functionality can be found in the following repos:
-
-* [Beacon APIs](https://github.com/ethereum/beacon-apis)
-* [Beacon Metrics](https://github.com/ethereum/beacon-metrics/)
-
-## Design goals
-
-The following are the broad design goals for the Ethereum proof-of-stake consensus specifications:
-* to minimize complexity, even at the cost of some losses in efficiency
-* to remain live through major network partitions and when very large portions of nodes go offline
-* to select all components such that they are either quantum secure or can be easily swapped out for quantum secure counterparts when available
-* to utilize crypto and design techniques that allow for a large participation of validators in total and per unit time
-* to allow for a typical consumer laptop with `O(C)` resources to process/validate `O(1)` shards (including any system level validation such as the beacon chain)
-
-## Useful external resources
-
-* [Design Rationale](https://notes.ethereum.org/s/rkhCgQteN#)
-* [Phase 0 Onboarding Document](https://notes.ethereum.org/s/Bkn3zpwxB)
-* [Combining GHOST and Casper paper](https://arxiv.org/abs/2003.03052)
-
-## For spec contributors
-
-Documentation on the different components used during spec writing can be found here:
-* [YAML Test Generators](tests/generators/README.md)
-* [Executable Python Spec, with Py-tests](tests/core/pyspec/README.md)
-
-## Online viewer of the latest release (latest `master` branch)
-
-[Ethereum Consensus Specs](https://ethereum.github.io/consensus-specs/)
+### Acco
 
 ## Consensus spec tests
 
